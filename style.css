@@ -1,0 +1,51 @@
+/*body{
+    background-color: coral;
+}
+
+#datos{
+    background-color: rgb(82, 158, 224);
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.informacion{
+    background-color: darkgreen;
+}
+.datos1{
+    background-color: beige;
+}*/
+body{
+    background-color: bisque;
+    border: 5px solid blue;
+}
+.pag_centro{
+    width: 60%;
+   margin: 1px auto;
+}
+
+.texto_centro{
+    text-align: center;
+}
+
+.margen{
+    margin: 0%;
+}
+
+#fondo_aqua{
+    background: aqua;
+}
+
+.texto_justificado{
+    text-align: justify;
+}
+
+.fondod{
+    background-color: rgb(245, 240, 233);
+}
+
+p{
+    background-color: rgb(224, 221, 218);
+}
+
+
+
