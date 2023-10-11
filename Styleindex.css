@@ -14,7 +14,7 @@ main{
     grid-template-columns: 1fr;
     /*grid-template-rows: 2fr 1fr 4fr 2fr 1fr;*/
     /*grid-template-rows: 100px 45px 300px 50px 100px;*/
-    grid-template-rows: 20% 5% 40% 15% 20%;
+    grid-template-rows: 17% 7% 46% 13% 17%;
     min-height: 100vh;
     min-width: 100vw;
 
@@ -34,7 +34,7 @@ main{
         color: pink;
         font-size: 80px;
         align-self: center;
-        padding-top: 50px;
+        padding-top: 25px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
@@ -53,14 +53,14 @@ main{
     }
 h3{
     grid-area: 2/3/1/2;
-    font-size: 14px;   
+    font-size: 20px;
+    font-weight: bold;   
 }
 h5{
     grid-column: 2/3;
     grid-row: 2/3;
     font-style: italic;
 }
-
 /*Aquí termina la sección encabezado*/
 
 /*Aqui inicia la sección cuerpo*/
@@ -128,20 +128,48 @@ h5{
 }
     .itemhabilidades p{
         text-align: center;
-        margin-top: 40px;
+        margin-top: 20px;
         font-weight: bold;
     }
 .descripcion{
     grid-column: 3/6;
-    grid-row: 4/5;
+    grid-row: 4/5;    
 }
+    .descripcion p{
+        text-align: justify;
+        font-size: 10px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        background-color: rgb(209, 252, 252);
+        border-radius: 20%;
+        padding: 15px;
+    }
 /*Termina sección Cuerpo*/
 
 .pie{
     background-color: rgb(60, 60, 248);
     height: 100%;
+    display: grid;
+    grid-template-columns: 2fr repeat(6, 1fr) 2fr;
+    grid-template-rows: 1fr;
 }
-
+.iconof img{
+    width: 35px;
+}
+.iconog img{
+    width: 35px;
+}
+.iconot img{
+    width: 35px;
+}
+.iconoi img{
+    width: 35px;
+}
+.iconotk img{
+    width: 35px;
+}
+.iconow img{
+    width: 35px;
+}
 /*Adorno debajo de foother*/
 .B2{
     height: 100%;
