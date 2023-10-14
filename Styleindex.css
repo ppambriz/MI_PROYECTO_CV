@@ -14,7 +14,7 @@ main{
     grid-template-columns: 1fr;
     /*grid-template-rows: 2fr 1fr 4fr 2fr 1fr;*/
     /*grid-template-rows: 100px 45px 300px 50px 100px;*/
-    grid-template-rows: 17% 7% 46% 13% 17%;
+    grid-template-rows: 16% 9% 46% 13% 16%;
     min-height: 100vh;
     min-width: 100vw;
 
@@ -23,12 +23,11 @@ main{
 .B1{
     color:transparent;
     text-align:center;
-    background-color: rgb(61, 55, 55);
+    background-color: rgb(34, 33, 33);
     height: 100%;
     padding: 0;
     margin: 0;
     font-size: 10px;
-    transition: width 10s;
 }
     .B1:hover{
         color: pink;
@@ -45,21 +44,24 @@ main{
     height: 100%;
     display: grid;
     grid-template-columns: 3fr 3fr 1fr 1fr 1fr 3fr ;
-    grid-template-rows: auto;
+    grid-template-rows: 2fr 1fr;
+    padding-top: 15px;
 }
     .encabezado a{
         text-decoration: none;
+        justify-self: end;
         /*font-size: 25px;*/
     }
 h3{
     grid-area: 2/3/1/2;
-    font-size: 20px;
-    font-weight: bold;   
+    font-size: 27px;
+    font-weight: bold;
 }
-h5{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    font-style: italic;
+.encabezado div h5{
+   font-style: italic;
+   font-size: 55;
+   font-weight: bold;
+   padding-left: 5px;
 }
 /*Aquí termina la sección encabezado*/
 
@@ -72,68 +74,108 @@ h5{
     grid-template-rows: 1fr 1fr 2fr 2fr;    
 }
 .itemimagen{
-    /*background-color: blue;*/
     grid-column: 2/3;
-    grid-row: 1/5;
-    align-self: stretch;   
+    grid-row: 1/5; 
+    margin-top: 30px;    
 }
     .itemimagen img{
-        width: 100%;
-        border-radius:80%;
-        margin-top: 15px;
-        /*cursor: pointer;*/
-        box-shadow: 5px 10px 15px rgb(100, 182, 230);
+        width: 90%;        
+        box-shadow: 5px 10px 15px rgb(14, 82, 160);
+        transition: 1s;
+    }
+    .itemimagen img:hover{
+        width: 120%;
+        position: relative;
     }
 .itemhola{
-    /*background-color: blueviolet;*/
     grid-column: 3/6;
-    font-size: 60px;  
+    font-size: 70px;  
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .itemalgo{
-    /*background-color: brown;*/
     grid-column: 3/6;
     grid-row: 2/3;
-    font-size: 25px;    
-}    
+    font-size: 25px;  
+    font-style: italic;  
+} 
+
 .itemcv{
     background-color: rgb(64, 224, 245);
     grid-column: 3/4;
     grid-row: 3/4;
-    border-radius: 100%;
+    border-radius: 50%;
+    width: 90%;
+    text-align: center;
+    box-shadow: -3px 0 10px rgba(14, 82, 160), -4px 0 10px rgba(14, 82, 160), -5px 0 10px rgba(14, 82, 160);
+    transform: all 0.3s ease;
 }
     .itemcv p{
-       margin-top: 50px;
-       text-align: center;
-       font-weight: bold;
+        font-weight: bold;
+        padding-top:50%;
+        font-size: 25px;        
     }
+    .itemcv a{
+        text-decoration: none;
+        color: black;
+    }
+    .itemcv:hover{
+        margin-right: 80px;
+        transform: rotate(10deg) translateY(-25px);
+    }
+
 .itemtrabajo{
     background-color: aquamarine;
     grid-column: 4/5;
     grid-row: 3/4;
-    border-radius: 100%;
-    margin: 5%;  
+    border-radius: 45%;
+    width: 90%;
+    text-align: center;
+    box-shadow: -3px 0 10px rgba(14, 82, 160), -4px 0 10px rgba(14, 82, 160), -5px 0 10px rgba(14, 82, 160);
+    transform: all 0.3s ease;
 }
     .itemtrabajo p{
-        margin-top: 40px;
-        text-align: center;
         font-weight: bold;
+        padding-top:45%;
+        font-size: 20px;
     }
+    .itemtrabajo a{
+        text-decoration: none;
+        color: black;
+    }
+    .itemtrabajo:hover{
+        margin-right: 80px;
+        transform: rotate(10deg) translateY(-25px);
+    }
+
 .itemhabilidades{
     background-color: darkkhaki;
     grid-column: 5/6;
     grid-row: 3/4;
-    border-radius: 100%;
-    margin: 10px; 
+    border-radius: 50%;
+    width: 90%;
+    text-align: center;
+    transform: all 0.3s ease;
+    box-shadow: -3px 0 10px rgba(14, 82, 160), -4px 0 10px rgba(14, 82, 160), -5px 0 10px rgba(14, 82, 160);
+    transform: all 0.3s ease;
 }
     .itemhabilidades p{
-        text-align: center;
-        margin-top: 20px;
         font-weight: bold;
+        padding-top:45%;
+        font-size: 18px;
     }
+    .itemhabilidades a{
+        text-decoration: none;
+        color: black;
+    }
+    .itemhabilidades:hover{
+        margin-right: 80px;
+        transform: rotate(10deg) translateY(-25px);
+    }
+
 .descripcion{
     grid-column: 3/6;
-    grid-row: 4/5;    
+    grid-row: 4/5; 
+    padding-top: 30px;   
 }
     .descripcion p{
         text-align: justify;
@@ -146,7 +188,7 @@ h5{
 /*Termina sección Cuerpo*/
 
 .pie{
-    background-color: rgb(60, 60, 248);
+    background-color: rgb(190, 36, 152);
     height: 100%;
     display: grid;
     grid-template-columns: 2fr repeat(6, 1fr) 2fr;
@@ -174,5 +216,5 @@ h5{
 .B2{
     height: 100%;
     color: white;
-    background-color: rgb(61, 55, 55);
+    background-color: rgb(34, 33, 33);
 }
