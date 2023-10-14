@@ -54,15 +54,24 @@ h3{
     grid-area: 2/3/1/2;
     font-size: 20px;
     font-weight: bold;
+    margin: 0;
     padding-top: 15px;
+    padding-left: 15px;
+    width: 380px;
     background-color: bisque;
 }
 .encabezado div h5{
    font-style: italic;
    font-size: 55;
    font-weight: bold;
-   padding-left: 5px;
+   padding-left: 15px;
+   padding-bottom: 10px;
+   
    background-color: bisque;
+}
+.encabezado div{
+    background-color: black;
+    width: 380px;
 }
     .encabezado a:hover{
         background-color: blue;
