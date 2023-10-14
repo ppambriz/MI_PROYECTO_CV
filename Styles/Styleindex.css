@@ -14,16 +14,16 @@ main{
     grid-template-columns: 1fr;
     /*grid-template-rows: 2fr 1fr 4fr 2fr 1fr;*/
     /*grid-template-rows: 100px 45px 300px 50px 100px;*/
-    grid-template-rows: 16% 9% 46% 13% 16%;
+    grid-template-rows: 16% 12% 46% 10% 16%;
     min-height: 100vh;
     min-width: 100vw;
 
 }
 /*Adorno encima del encabezado*/
 .B1{
-    color:transparent;
-    text-align:center;
     background-color: rgb(34, 33, 33);
+    /*color:transparent;
+    text-align:center;
     height: 100%;
     padding: 0;
     margin: 0;
@@ -31,10 +31,9 @@ main{
 }
     .B1:hover{
         color: pink;
-        font-size: 80px;
-        align-self: center;
-        padding-top: 25px;
+        font-size: 45px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        height: 100%;*/
     }
 
 
@@ -45,7 +44,6 @@ main{
     display: grid;
     grid-template-columns: 3fr 3fr 1fr 1fr 1fr 3fr ;
     grid-template-rows: 2fr 1fr;
-    padding-top: 15px;
 }
     .encabezado a{
         text-decoration: none;
@@ -54,15 +52,32 @@ main{
     }
 h3{
     grid-area: 2/3/1/2;
-    font-size: 27px;
+    font-size: 20px;
     font-weight: bold;
+    padding-top: 15px;
+    background-color: bisque;
 }
 .encabezado div h5{
    font-style: italic;
    font-size: 55;
    font-weight: bold;
    padding-left: 5px;
+   background-color: bisque;
 }
+    .encabezado a:hover{
+        background-color: blue;
+        color: white;
+        border-radius:20px;
+        padding: 2px;
+    }
+    .encabezado a:visited{
+        color: black;
+    }
+
+    .encabezado a{
+        width: 80px;
+        text-align: center;
+    }
 /*Aquí termina la sección encabezado*/
 
 /*Aqui inicia la sección cuerpo*/
@@ -89,13 +104,13 @@ h3{
     }
 .itemhola{
     grid-column: 3/6;
-    font-size: 70px;  
+    font-size: 50px;  
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .itemalgo{
     grid-column: 3/6;
     grid-row: 2/3;
-    font-size: 25px;  
+    font-size: 20px;  
     font-style: italic;  
 } 
 
@@ -111,7 +126,7 @@ h3{
 }
     .itemcv p{
         font-weight: bold;
-        padding-top:50%;
+        padding-top:30%;
         font-size: 25px;        
     }
     .itemcv a{
@@ -135,7 +150,7 @@ h3{
 }
     .itemtrabajo p{
         font-weight: bold;
-        padding-top:45%;
+        padding-top:30%;
         font-size: 20px;
     }
     .itemtrabajo a{
@@ -160,7 +175,7 @@ h3{
 }
     .itemhabilidades p{
         font-weight: bold;
-        padding-top:45%;
+        padding-top:15%;
         font-size: 18px;
     }
     .itemhabilidades a{
@@ -175,12 +190,18 @@ h3{
 .descripcion{
     grid-column: 3/6;
     grid-row: 4/5; 
-    padding-top: 30px;   
+    padding-top: 15px;   
 }
+    .descripcion:hover{
+        box-shadow: 1px 0px 3px 3px white;
+        border-radius: 30%;
+    }
     .descripcion p{
         text-align: justify;
         font-size: 10px;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-style: italic;
+        font-weight: 550;
         background-color: rgb(209, 252, 252);
         border-radius: 20%;
         padding: 15px;
@@ -193,25 +214,56 @@ h3{
     display: grid;
     grid-template-columns: 2fr repeat(6, 1fr) 2fr;
     grid-template-rows: 1fr;
+    align-items: center;
 }
 .iconof img{
     width: 35px;
+    transition: 800ms;
 }
+    .iconof img:hover{
+        width: 55px;
+        cursor: pointer;
+    }
 .iconog img{
     width: 35px;
+    transition: 800ms;
 }
+    .iconog img:hover{
+        width: 55px;
+        cursor: pointer;
+    }
 .iconot img{
     width: 35px;
+    transition: 800ms;
+}
+.iconot img:hover{
+    width: 55px;
+    cursor: pointer;
 }
 .iconoi img{
     width: 35px;
+    transition: 800ms;
 }
+    .iconoi img:hover{
+        width: 55px;
+        cursor: pointer;
+    }
 .iconotk img{
     width: 35px;
+    transition: 800ms;
 }
+    .iconotk img:hover{
+        width: 55px;
+        cursor: pointer;
+    }
 .iconow img{
     width: 35px;
+    transition: 800ms;
 }
+    .iconow img:hover{
+        width: 55px;
+        cursor: pointer;
+    }
 /*Adorno debajo de foother*/
 .B2{
     height: 100%;
