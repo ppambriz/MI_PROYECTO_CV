@@ -10,14 +10,13 @@ body{
 }
 
 main{
+    min-height: 100vh;
+    min-width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
     /*grid-template-rows: 2fr 1fr 4fr 2fr 1fr;*/
     /*grid-template-rows: 100px 45px 300px 50px 100px;*/
     grid-template-rows: 15% 14% 46% 10% 15%;
-    min-height: 100vh;
-    min-width: 100vw;
-
 }
 /*Adorno encima del encabezado*/
 .B1{
@@ -280,37 +279,68 @@ h3{
     background-color: rgb(34, 33, 33);
 }
 
-/*Responsive pantalla mediana*/
+/*Responsive pantalla mediana*//*
 @media screen and (max-width: 1150px){
     .itemhabilidades p{
         font-size: 15px;
     }
 }
-
-@media screen and (max-width: 1050px){
-    .itemcv p{
-        font-size: 12;
+*/
+@media screen and (max-width: 1100px){
+    .itemcv{
+        width: 100px;
+        height: 100px;
     }
-
-    .itemtrabajo p{
-        font-size: 12px;
+        .itemcv p{
+            font-size: 12;
+        }
+    
+    .itemtrabajo{
+        width: 100px;
+        height: 100px;
     }
+        .itemtrabajo p{
+            font-size: 18px;
+        }
 
-    .itemhabilidades p{
-        font-size: 11px;
+    .itemhabilidades{
+        width: 100px;
+        height: 100px;
     }
+        .itemhabilidades p{
+            font-size: 15px;
+        }
 }
 
-@media screen and (max-width: 720px) {
-    .itemcv p{
-        font-size: 8;
+@media screen and (max-width: 750px) {
+    .itemcv{
+        width: 65px;
+        height: 65px;
     }
-
-    .itemtrabajo p{
-        font-size: 8px;
+        .itemcv p{
+            font-size: 15px;
+        }
+    
+    .itemtrabajo{
+        width: 65px;
+        height: 65px;
     }
+        .itemtrabajo p{
+            font-size: 12px;
+        }
 
-    .itemhabilidades p{
-        font-size: 8px;
+    .itemhabilidades{
+        width: 65px;
+        height: 65px;
+    }
+        .itemhabilidades p{
+            font-size: 11px;
+        }
+}
+
+@media screen and (max-width:400px){
+    body{
+        width: 100%;
+        height: 100%;
     }
 }
