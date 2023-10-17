@@ -15,23 +15,22 @@ main{
 
 .personal{
     display: grid;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 18% 82%;
 }
 .encabezado{
-    text-align: center;
     background-color: rgb(2, 32, 53);
 }
-
 .encabezado img{
     width: 180px;
-    margin-top: 80px;
-    position: relative;
+    margin-top: 7%;
+    padding-left: 13%;
+    position: absolute;
     border-radius: 50%;
 }
 
 .cuerpo{
     display: grid;
-    grid-template-rows: 25% 2fr 1fr 4fr;
+    grid-template-rows: 25% 23% 20% 32%;
     grid-template-columns: 1fr;
     background-color: rgb(109, 107, 107);
 }
@@ -54,8 +53,30 @@ main{
 
 .aptitudes{
     color: white;
-    margin: 10%;
+    border-bottom: 3px solid white;
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
+.vehiculo{
+    color: white;
+    border-bottom: 3px solid white;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.licencia{
+    color: white;
+    border-bottom: 3px solid white;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*SECCION DE INFORMACION LABORAL*/
+.datos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
 }
 
 /*
