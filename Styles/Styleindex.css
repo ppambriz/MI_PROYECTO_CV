@@ -18,6 +18,9 @@ main{
     /*grid-template-rows: 100px 45px 300px 50px 100px;*/
     grid-template-rows: 15% 14% 46% 10% 15%;
 }
+
+
+
 /*Adorno encima del encabezado*/
 .B1{
     background-color: rgb(34, 33, 33);

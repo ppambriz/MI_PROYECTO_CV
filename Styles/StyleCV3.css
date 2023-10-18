@@ -50,7 +50,10 @@ main{
     .fcontacto{
         display: inline;
         margin-top: 50px;
-}
+    }
+    .mail{
+        font-size: 12px;
+    }
 
 .aptitudes{
     color: white;
@@ -58,6 +61,7 @@ main{
     margin-left: 10%;
     margin-right: 10%;
 }
+    
 
 .vehiculo{
     color: white;
@@ -66,10 +70,16 @@ main{
     margin-right: 10%;
 }
 
+    .vehiculo h5{
+        margin-top: -10px;
+        padding-top: 0%;
+    }
+
 .licencia{
     color: white;
     margin-left: 10%;
     margin-right: 10%;
+    text-align: justify;
 }
 
 /*SECCION DE INFORMACION LABORAL*/
@@ -90,19 +100,52 @@ main{
         padding: 0;
         margin: 10px;
         font-weight: bold;
+        font-size: 45px;
     }
 
 .resumen{
-    /*border: 1px solid blue;*/
+    border-bottom: 3px solid rgb(6, 72, 212);
+    margin-right: 40px;
 }
+    .resumen h3{
+        padding-top: 1px;
+        margin-top: 2px;
+        color: rgb(6, 72, 212);
+    }
+    .resumen p{
+        text-align: justify;
+        font-size: 14px;
+        font-weight: 545;
+        margin-top: -5px;
+    }
 
 .historial{
-    border: 1px solid blue;
+    border-bottom: 3px solid rgb(6, 72, 212);
+    margin-right: 40px;
 }
+    .historial h3{
+        color: rgb(6, 72, 212);
+        padding-top: 1px;
+        margin-top: 2px;
+    }
+    .historial h5{
+        margin-top: -10px;
+    }
+    .historial h4{
+        margin-top: -15px;
+    }
 
 .formacion{
-    border: 1px solid blue;
+    
 }
+    .formacion h3{
+        padding-top: 1px;
+        margin-top: 2px;
+        color: rgb(6, 72, 212);
+    }
+    .formacion h4{
+        margin-bottom: -12px;
+    }
 
 
 /*
