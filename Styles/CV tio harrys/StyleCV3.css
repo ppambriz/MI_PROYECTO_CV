@@ -7,9 +7,9 @@ body{
 
 main{
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 40% 56%;
     grid-template-rows: 1fr;
-    column-gap: 30px;
+    column-gap: 4%;
     min-width: 100vw;
     min-height: 100vh;
 }
@@ -86,7 +86,7 @@ main{
 .datos{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 15% 20% 45% 20%;
+    grid-template-rows: 20% 20% 35% 15%;
 }
 
 .nombre{
@@ -144,7 +144,7 @@ main{
         color: rgb(6, 72, 212);
     }
     .formacion h4{
-        margin-bottom: -12px;
+        margin-bottom: -18px;
     }
 
 

@@ -24,9 +24,17 @@ main{
 .encabezado img{
     width: 180px;
     margin-top: 7%;
-    padding-left: 13%;
+    padding-left: 10%;
     position: absolute;
     border-radius: 50%;
+}
+.encabezado a strong{
+    text-decoration: none;
+    color: white;
+}
+.encabezado strong{
+   padding: 30px;
+   position: absolute;
 }
 
 .cuerpo{
