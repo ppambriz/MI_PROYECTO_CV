@@ -377,16 +377,13 @@ h3{
     main{
         min-height: 100vh;
         min-width: 100vw;
-        display: grid;
-        grid-template-columns: 1fr;
-        /*grid-template-rows: 2fr 1fr 4fr 2fr 1fr;*/
-        /*grid-template-rows: 100px 45px 300px 50px 100px;*/
-        grid-template-rows: 2.8% 14% 46% 10% 15%;
     }
 
     .B1{
-        letter-spacing: 2em;
-        font-size: 0.5em;
-        height: 4em;
+        letter-spacing: 1em;
+        font-size: 13px;
+        text-shadow: 0 0 10px white ;
+        transition: 2s;
+        cursor: pointer;
     }
 }
